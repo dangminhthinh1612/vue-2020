@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
+    <button class="btn btn-primary">Đăng ký tại đây</button>
   </div>
 </template>
 
