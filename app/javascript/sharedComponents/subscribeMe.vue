@@ -1,0 +1,23 @@
+<template>
+	<div class="subscribe-me text-center">
+		<h1>Don’t Miss The Hottest News</h1>
+		<h2>Subscribe our Newsletter</h2>
+		<a href="#close" class="sb-close-btn"><img class="img-fluid" src="assets/close-button.png" alt="Image" /></a>
+		<form action="#" method="post" id="popup-subscribe-form" name="subscribe-form">
+			<div class="input-group">
+				<span class="input-group-addon"><img src="assets/icon-message.png" alt="Image" /></span>
+				<input type="text" placeholder="Enter your email" name="email">
+				<button type="submit" name="subscribe">Go</button>
+			</div>
+		</form>
+	</div>  <!--/.subscribe-me-->
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+    }
+  }
+}
+</script>
