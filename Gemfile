@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.6.5'
 
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 gem 'sqlite3'
@@ -15,8 +15,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
-gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
-gem 'font-awesome-sass', '~> 5.12'
+
+gem 'bootstrap', '~> 4.4.1'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+gem 'popper_js', '~> 1.16'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 
 
