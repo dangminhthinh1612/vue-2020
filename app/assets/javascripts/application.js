@@ -10,7 +10,17 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require popper
+//= require bootstrap
+//= require lib/jquery.magnific-popup
+//= require lib/owl.carousel
+//= require lib/moment
+//= require lib/jquery.sticky-kit
+//= require lib/jquery.easy-ticker
+//= require lib/jquery.subscribe-better
+//= require lib/theia-sticky-sidebar
+//= require lib/main
+//= require lib/switcher
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
-//= require_tree .

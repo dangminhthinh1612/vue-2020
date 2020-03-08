@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+    meta content="" name="description"
+    meta content="" name="author"
+    title News Press | News &amp; Blog Template
+    /![if lt IE 9]
+      | <script src="js/html5shiv.js"></script
+      | <script src="js/respond.min.js"></script
+    / link href="images/ico/favicon.ico" rel=("shortcut icon") /
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    = yield

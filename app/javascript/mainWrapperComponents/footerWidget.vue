@@ -1,0 +1,54 @@
+<template>
+  <div class="footer-widget">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget">
+            <h1 class="section-title title">About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <address>
+              <p>Address : 123 Gegrit, London, England</p>
+              <p>Call : +1234-222-3333</p>
+              <p>Email: <a href="#"><span class="__cf_email__" data-cfemail="355c5b535a755b50424645475046461b565a58">[email&#160;protected]</span></a></p>
+            </address>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget">
+            <h1 class="section-title title">Flickr Gallery</h1>
+            <ul>
+              <li><a href="images/post/flicker/1.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/2.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/3.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/4.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/5.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/6.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/7.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+              <li><a href="images/post/flicker/8.jpg" class="image-link"><img class="img-fluid" src="assets/1.jpg" alt="Image" /></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget news-letter">
+            <h1 class="section-title title">Weekly NewsLetter</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+
+            <form action="#" method="post" id="subscribe-form" name="subscribe-form">
+              <input type="text" placeholder="Your E-mail" name="email">
+              <button type="submit" name="subscribe" id="subscribe" >Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/.footer-widget-->
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+    }
+  }
+}
+</script>
