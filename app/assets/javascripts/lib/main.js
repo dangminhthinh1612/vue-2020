@@ -226,8 +226,6 @@ $("#main-slider").owlCarousel({
 
 $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=Seattle&units=imperial&appid=ab85ba57bbbb423fb62bfb8201126ede", function(data) {
 
-console.log(data);
-
 var temp = Math.floor(data.main.temp);
 
 var weather = data.weather[0].main;

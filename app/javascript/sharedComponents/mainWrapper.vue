@@ -1,8 +1,8 @@
 <template>
   <div id="main-wrapper" class="homepage">
     <PageHeader></PageHeader>
-    <HomePageContainer></HomePageContainer>
-    <TwitterFeed></TwitterFeed>
+    <HomePageContainer :featurePost=[1,2,3] :lastestNews=[1,2,3,4,5,6,7,8,9]></HomePageContainer>
+    <TwitterFeed :twitterFeeds=[1,2,3]></TwitterFeed>
     <FooterWidget></FooterWidget>
   </div>
 </template>
