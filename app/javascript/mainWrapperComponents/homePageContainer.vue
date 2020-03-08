@@ -6,195 +6,29 @@
           <div class="row">
             <div class="col-md-8">
               <div id="home-slider">
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
+                <div v-for="post in featurePost" :key="post.id">
+                  <div class="post feature-post">
+                    <div class="entry-header">
+                      <div class="entry-thumbnail">
+                        <img class="img-fluid" src="assets/7.jpg" alt="Image" />
+                      </div>
+                      <div class="catagory world"><a href="#">World</a></div>
                     </div>
-                    <div class="catagory world"><a href="#">World</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
+                    <div class="post-content">
+                      <div class="entry-meta">
+                        <ul class="list-inline">
+                          <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
+                          <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
+                          <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
+                          <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
+                        </ul>
+                      </div>
+                      <h2 class="entry-title">
+                        <a href="news-details.html">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
+                      </h2>
                     </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory sports"><a href="#">Sports</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">The 20 moments in sports that tried to break the Internet in 2018</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory entertainment"><a href="#">Entertainment</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">The best games in 2018 for your new iPhone, iPad, or Android phone</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory world"><a href="#">World</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">The Force Awakens doubles previous Christmas Day record with $49.3 million box office</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory sports"><a href="#">Sports</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">Bran Stark is all grown up in new 'Game of Thrones' Season 6 photo</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory entertainment"><a href="#">Entertainment</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">Watch directors Quentin Tarantino and Paul Thomas Anderson geek out over 70mm film</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory world"><a href="#">World</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">'Affluenza' teen arrested in Mexican resort after weeks on the run</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory sports"><a href="#">Sports</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">Peyton Manning deserved a better ending -- if he's telling the truth</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
-                <div class="post feature-post">
-                  <div class="entry-header">
-                    <div class="entry-thumbnail">
-                      <img class="img-fluid" src="assets/7.jpg" alt="Image" />
-                    </div>
-                    <div class="catagory entertainment"><a href="#">Entertainment</a></div>
-                  </div>
-                  <div class="post-content">
-                    <div class="entry-meta">
-                      <ul class="list-inline">
-                        <li class="publish-date"><i class="fa fa-clock-o"></i><a href="#"> Nov 1, 2018 </a></li>
-                        <li class="views"><i class="fa fa-eye"></i><a href="#">15k</a></li>
-                        <li class="loves"><i class="fa fa-heart-o"></i><a href="#">278</a></li>
-                        <li class="comments"><i class="fa fa-comment-o"></i><a href="#">189</a></li>
-                      </ul>
-                    </div>
-                    <h2 class="entry-title">
-                      <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams administration</a>
-                    </h2>
-                  </div>
-                </div><!--/post-->
+                  </div><!--/post-->
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -306,191 +140,28 @@
       <div class="latest-news-wrapper">
         <h1 class="section-title">Latest News</h1>
         <div id="latest-news">
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
+          <div v-for="post in lastestNews" :key="post.id">
+            <div class="post medium-post">
+              <div class="entry-header">
+                <div class="entry-thumbnail">
+                  <img class="img-fluid" src="assets/5.jpg" alt="Image" />
+                </div>
+                <div class="catagory politics"><span><a href="#">Politics</a></span></div>
               </div>
-              <div class="catagory politics"><span><a href="#">Politics</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
+              <div class="post-content">
+                <div class="entry-meta">
+                  <ul class="list-inline">
+                    <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
+                    <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
+                    <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
+                  </ul>
+                </div>
+                <h2 class="entry-title">
+                  <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
+                </h2>
               </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory world"><a href="#">World</a></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">44 books on 44 presidents: Welcome, folks, to the Adams</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory health"><span><a href="#">Health</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">And the most streamed Beatles song on Spotify is...</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory sports"><span><a href="#">Sports</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">NBA suspends Matt Barnes for attack on Derek Fisher</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory politics"><span><a href="#">Politics</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">At Facebook who suggests tags for all of your photos</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">Suspicion of plotting New Year's Eve attacks in Belgium</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory sports"><span><a href="#">Sports</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">Someone has calculated the total cost of saving Matt</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory politics"><span><a href="#">Politics</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">Homemade lightsaber made with laser can cut wires</a>
-              </h2>
-            </div>
-          </div><!--/post-->
-
-          <div class="post medium-post">
-            <div class="entry-header">
-              <div class="entry-thumbnail">
-                <img class="img-fluid" src="assets/5.jpg" alt="Image" />
-              </div>
-              <div class="catagory entertainment"><span><a href="#">Entertainment</a></span></div>
-            </div>
-            <div class="post-content">
-              <div class="entry-meta">
-                <ul class="list-inline">
-                  <li class="publish-date"><a href="#"><i class="fa fa-clock-o"></i> Nov 5, 2018 </a></li>
-                  <li class="views"><a href="#"><i class="fa fa-eye"></i>15k</a></li>
-                  <li class="loves"><a href="#"><i class="fa fa-heart-o"></i>278</a></li>
-                </ul>
-              </div>
-              <h2 class="entry-title">
-                <a href="news-details.html">Our closest relatives aren't fans of daylight saving time</a>
-              </h2>
-            </div>
-          </div><!--/post-->
+            </div><!--/post-->
+          </div>
         </div>
       </div><!--/.latest-news-wrapper-->
     </div><!--/.section-->
@@ -1260,6 +931,28 @@ export default {
   data: function () {
     return {
     }
+  },
+  props: {
+    featurePost: Array,
+    lastestNews: Array
+  },
+  mounted: function() {
+    $("#home-slider").owlCarousel({
+      pagination	: true,
+      autoPlay	: true,
+      singleItem	: true,
+      stopOnHover	: true,
+    });
+    $("#latest-news").owlCarousel({
+      items : 4,
+      pagination	: true,
+      autoPlay	: true,
+      stopOnHover	: true,
+    });
+    $('.tr-sticky')
+    .theiaStickySidebar({
+        additionalMarginTop: 0
+    });
   }
 }
 </script>

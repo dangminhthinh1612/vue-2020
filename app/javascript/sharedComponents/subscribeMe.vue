@@ -18,6 +18,16 @@ export default {
   data: function () {
     return {
     }
-  }
+	},
+	mounted: function() {
+		$(".subscribe-me").subscribeBetter({
+			trigger: "onidle",
+			animation: "fade",
+			delay:70,
+			showOnce: true,
+			autoClose: false,
+			scrollableModal: false
+		});
+	}
 }
 </script>
