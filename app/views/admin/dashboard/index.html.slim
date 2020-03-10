@@ -1,0 +1,139 @@
+body.sb-nav-fixed
+  nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
+    a.navbar-brand href="index.html"  Start Bootstrap
+    button#sidebarToggle.btn.btn-link.btn-sm.order-1.order-lg-0 href="#"
+      i.fas.fa-bars
+    /! Navbar Search
+    form.d-none.d-md-inline-block.form-inline.ml-auto.mr-0.mr-md-3.my-2.my-md-0
+      .input-group
+        input.form-control aria-describedby="basic-addon2" aria-label="Search" placeholder=("Search for...") type="text" /
+        .input-group-append
+          button.btn.btn-primary type="button"
+            i.fas.fa-search
+    /! Navbar
+    ul.navbar-nav.ml-auto.ml-md-0
+      li.nav-item.dropdown
+        a#userDropdown.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+          i.fas.fa-user.fa-fw
+        .dropdown-menu.dropdown-menu-right aria-labelledby="userDropdown"
+          a.dropdown-item href="#"  Settings
+          a.dropdown-item href="#"  Activity Log
+          .dropdown-divider
+          a.dropdown-item href="login.html"  Logout
+  #layoutSidenav
+    #layoutSidenav_nav
+      nav#sidenavAccordion.sb-sidenav.accordion.sb-sidenav-dark
+        .sb-sidenav-menu
+          .nav
+            .sb-sidenav-menu-heading Core
+            a.nav-link href="index.html"
+              .sb-nav-link-icon
+                i.fas.fa-tachometer-alt
+              | Dashboard
+            .sb-sidenav-menu-heading Interface
+            a.nav-link.collapsed aria-controls="collapseLayouts" aria-expanded="false" data-target="#collapseLayouts" data-toggle="collapse" href="#"
+              .sb-nav-link-icon
+                i.fas.fa-columns
+              | Layouts
+              .sb-sidenav-collapse-arrow
+                i.fas.fa-angle-down
+            #collapseLayouts.collapse aria-labelledby="headingOne" data-parent="#sidenavAccordion"
+              nav.sb-sidenav-menu-nested.nav
+                a.nav-link href="layout-static.html"  Static Navigation
+                a.nav-link href="layout-sidenav-light.html"  Light Sidenav
+            a.nav-link.collapsed aria-controls="collapsePages" aria-expanded="false" data-target="#collapsePages" data-toggle="collapse" href="#"
+              .sb-nav-link-icon
+                i.fas.fa-book-open
+              | Pages
+              .sb-sidenav-collapse-arrow
+                i.fas.fa-angle-down
+            #collapsePages.collapse aria-labelledby="headingTwo" data-parent="#sidenavAccordion"
+              nav#sidenavAccordionPages.sb-sidenav-menu-nested.nav.accordion
+                a.nav-link.collapsed aria-controls="pagesCollapseAuth" aria-expanded="false" data-target="#pagesCollapseAuth" data-toggle="collapse" href="#"
+                  | Authentication
+                  .sb-sidenav-collapse-arrow
+                    i.fas.fa-angle-down
+                #pagesCollapseAuth.collapse aria-labelledby="headingOne" data-parent="#sidenavAccordionPages"
+                  nav.sb-sidenav-menu-nested.nav
+                    a.nav-link href="login.html"  Login
+                    a.nav-link href="register.html"  Register
+                    a.nav-link href="password.html"  Forgot Password
+                a.nav-link.collapsed aria-controls="pagesCollapseError" aria-expanded="false" data-target="#pagesCollapseError" data-toggle="collapse" href="#"
+                  | Error
+                  .sb-sidenav-collapse-arrow
+                    i.fas.fa-angle-down
+                #pagesCollapseError.collapse aria-labelledby="headingOne" data-parent="#sidenavAccordionPages"
+                  nav.sb-sidenav-menu-nested.nav
+                    a.nav-link href="401.html"  401 Page
+                    a.nav-link href="404.html"  404 Page
+                    a.nav-link href="500.html"  500 Page
+            .sb-sidenav-menu-heading Addons
+            a.nav-link href="charts.html"
+              .sb-nav-link-icon
+                i.fas.fa-chart-area
+              | Charts
+            a.nav-link href="tables.html"
+              .sb-nav-link-icon
+                i.fas.fa-table
+              | Tables
+        .sb-sidenav-footer
+          .small Logged in as:
+          | Start Bootstrap
+    #layoutSidenav_content
+      main
+        .container-fluid
+          h1.mt-4 Dashboard
+          ol.breadcrumb.mb-4
+            li.breadcrumb-item.active Dashboard
+          .row
+            .col-xl-3.col-md-6
+              .card.bg-primary.text-white.mb-4
+                .card-body Primary Card
+                .card-footer.d-flex.align-items-center.justify-content-between
+                  a.small.text-white.stretched-link href="#"  View Details
+                  .small.text-white
+                    i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+              .card.bg-warning.text-white.mb-4
+                .card-body Warning Card
+                .card-footer.d-flex.align-items-center.justify-content-between
+                  a.small.text-white.stretched-link href="#"  View Details
+                  .small.text-white
+                    i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+              .card.bg-success.text-white.mb-4
+                .card-body Success Card
+                .card-footer.d-flex.align-items-center.justify-content-between
+                  a.small.text-white.stretched-link href="#"  View Details
+                  .small.text-white
+                    i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+              .card.bg-danger.text-white.mb-4
+                .card-body Danger Card
+                .card-footer.d-flex.align-items-center.justify-content-between
+                  a.small.text-white.stretched-link href="#"  View Details
+                  .small.text-white
+                    i.fas.fa-angle-right
+          .row
+            .col-xl-6
+              .card.mb-4
+                .card-header
+                  i.fas.fa-chart-area.mr-1
+                  | Area Chart Example
+                .card-body
+                  canvas#myAreaChart height="40" width="100%"
+            .col-xl-6
+              .card.mb-4
+                .card-header
+                  i.fas.fa-chart-bar.mr-1
+                  | Bar Chart Example
+                .card-body
+                  canvas#myBarChart height="40" width="100%"
+      footer.py-4.bg-light.mt-auto
+        .container-fluid
+          .d-flex.align-items-center.justify-content-between.small
+            .text-muted Copyright © Your Website 2019
+            div
+              a href="#"  Privacy Policy
+              | ·
+              a href="#"  Terms &amp; Conditions
