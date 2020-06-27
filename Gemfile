@@ -11,6 +11,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'slim-rails', '~> 3.2'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
